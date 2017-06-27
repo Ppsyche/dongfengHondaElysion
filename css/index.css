@@ -262,11 +262,6 @@ img,input{
     right: 25px;
     z-index: 100;
 }
-/*.guding{
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}*/
 
 .right-fix .ul {
     width: 120px;
@@ -317,8 +312,6 @@ img,input{
 .two-bg .top-nav {
     height: 52px;
     background-color: #000000;
-    position: absolute;
-    top: -1px;
 }
 
 .two-bg .top-nav .nav-left {
@@ -342,14 +335,39 @@ img,input{
     line-height: 52px;
     text-align: center;
 }
-
-.top-nav .nav-left .chose ul li {
+.top-nav .nav-left .chose ul li{
     float: left;
+    margin-right: 30px;
+}
+.top-nav .nav-left .chose ul li a{
     color: #FFFFFF;
     font-size: 14px;
-    margin-right: 30px;
-    cursor: pointer;
 }
+.top-nav .nav-left .chose ul li a:hover{
+    color: #D69672;
+    opacity: 1;
+    animation: zoom 0.5s;
+    -webkit-animation: zoom 0.5s;
+}
+@keyframes zoom {
+    0% {color: #fff;
+        opacity: 0.5;} 
+    100% {color: #D69672;
+        opacity: 1;}
+}
+@-webkit-keyframes zoom {
+    0% {color: #fff;
+        opacity: 0.5;} 
+    100% {color: #D69672;
+        opacity: 1;}
+}
+.top-nav .nav-left .chose .comcolor{
+    color: #D69672;
+}
+.top-nav .nav-left .chose ul li.comcolor:hover{
+    animation:none;
+}
+
 .two-bg .top-nav .nav-right {
     float: right;
     width: 350px;
@@ -375,13 +393,15 @@ img,input{
     height: 52px;
     line-height: 52px;
     color: #D69672;
+    font-weight: bolder;
+    font-size: 15px;
 }
-
-/*.fixed{*/
-/*position: fixed;*/
-/*top: 0;*/
-/*left: 0;*/
-/*}*/
+.two-bg .top-nav .nav-right:hover span{
+    opacity: 0.8;
+}
+.two-bg .top-nav .nav-right:hover p{
+    opacity: 0.8;
+}
 
 .two-bg {
     position: relative;
@@ -499,18 +519,23 @@ img,input{
 
 .all ol li {
     float: left;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 50%;
     background: #fff;
-    border: 1px solid #ccc;
+    border: 2px solid #fff;
     margin-left: 10px;
     cursor: pointer;
 }
-.cc{
-    color: white;
-    opacity: 0.5;
+.all ol li.cc{
+    /*color: white;*/
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 3px;
+    background-clip:content-box;
 }
 .allboth{
     width: 1350px;

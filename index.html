@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js"></script>
-    <script>
-
-    </script>
 
 </head>
 <body>
@@ -52,7 +49,7 @@
 <!--头部导航栏结束-->
 <!--中间主体图片部分开始-->
 <!--第一个背景-->
-<div class="main-pic" id="main">
+<div class="main-pic" id="main" name="main">
     <img class="home_bg" src="images/home_bg.jpg" alt="" width="1350px" height="580px"/>
     <img class="sensing" src="images/sensing.png" alt="" ;/>
     <img class="solgan" src="images/solgan.png" alt="" width="338px" height="54px"/>
@@ -158,7 +155,7 @@
 
 
 <!--第二个背景开始-->
-<div class="two-bg" id="twobg">
+<div class="two-bg" id="twobg" name="twobg">
     <div class="top-nav" id="navbar">
         <div class="nav-left">
             <div class="left-logo">
@@ -166,18 +163,20 @@
             </div>
             <div class="chose" id="chose">
                 <ul id="list">
-                    <li class="comcolor">车色选择</li>
-                    <li>车型亮点</li>
-                    <li>车型配置</li>
-                    <li>最新资讯</li>
-                    <li>经销商查询</li>
+                    <li><a class="comcolor" href="#twobg">车色选择</a></li>
+                    <li><a href="#all">车型亮点</a></li>
+                    <li><a href="#car-bg5">车型配置</a></li>
+                    <li><a href="#nextnew">最新资讯</a></li>
+                    <li><a href="#page-tag">经销商查询</a></li>
                 </ul>
             </div>
         </div>
         <div class="nav-right">
-            <span></span>
-
-            <p class="pp">预约试驾</p>
+            <a href="#">
+                <span></span>
+                <p class="pp">预约试驾</p>
+            </a>
+            
         </div>
     </div>
     <div class="big-bg">
@@ -248,7 +247,7 @@
 <!--第二个背景结束-->
 
 <!--第三个背景开始-->
-<div class="all" id="all">
+<div class="all" id="all" name="all">
     <div class="allboth">
         <div class="screen">
             <div class="car-window">
@@ -320,7 +319,7 @@
 
 
 <!--第四个背景开始-->
-<div class="car-light" id="box">
+<div class="car-light" id="box" name="box">
 
     <div class="list">
         <div class="length">
@@ -373,7 +372,7 @@
 
 
 <!--第五个页面-->
-<div class="car-bg5 clearfix" id="car-bg5">
+<div class="car-bg5 clearfix" id="car-bg5" name="car-bg5">
     <img class="cti-line-bg" src="images/bg_line.png" width="1350px">
     <img class="cti-configure-bg bg-tag" src="images/configure_bg.jpg" height="633px" width="1350px">
 
@@ -517,7 +516,7 @@
 
 
 <!--第六个页面-->
-<div class="nextnew">
+<div class="nextnew" id="nextnew" name="nextnew">
     <img src="images/news_bg.jpg" alt="" width="1350px" height="633px"/>
 
     <div class="news-title" id="news">
@@ -595,7 +594,7 @@
 </div>
 
 <!--第七个页面-->
-<div class=" page-tag">
+<div class=" page-tag" id="page-tag" name="page-tag">
     <img class="map-bg" src="images/map_bg.jpg" width="1350px" height="633px">
 
     <div class="map-tit" id="map1">
