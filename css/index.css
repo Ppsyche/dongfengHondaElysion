@@ -576,7 +576,7 @@ img,input{
 }
 
 /*关闭天窗*/
-.openwindow {
+.openwindow,.window {
     position: absolute;
     top: 140px;
     left: 425px;
@@ -585,11 +585,12 @@ img,input{
 
 }
 
-.openwindow .pic {
+.openwindow .pic ,.window .pic{
     margin-bottom: 20px;
+    background: rgba(0,0,0,.7);
 }
 
-.openwindow span {
+.openwindow span,.window span {
     display: inline-block;
     width: 80px;
     height: 35px;
@@ -1027,7 +1028,7 @@ img,input{
     position: absolute;
     display: none;
     background-color: #DC9770;
-    opacity: 0.5;
+    opacity: 0.9;
     width: 370px;
     height: 210px;
 }
@@ -1192,18 +1193,20 @@ img,input{
 }
 .foot {
     color: #626060;
-    width: 1000px;
+    width: 850px;
     height: 50px;
-    text-align: center;
+    /*text-align: center;*/
     position: relative;
+    margin: 0 auto;
 }
 .foot a{
     display: inline-block;
-    margin: 0 10px ;
+    margin: 0 10px;
     height:25px;
     line-height: 25px;
+    color: #626060;
 }
-.foot img{
+.foot .break{
     position: absolute;
     top: 6px;
     right: 5%;

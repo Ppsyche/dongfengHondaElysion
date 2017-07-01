@@ -8,7 +8,7 @@
     <script src="js/index.js"></script>
 
 </head>
-<body>
+<body id="body">
 <!--头部导航栏开始-->
 
 <div class="topp clearfix" id="topnav">
@@ -49,7 +49,7 @@
 <!--头部导航栏结束-->
 <!--中间主体图片部分开始-->
 <!--第一个背景-->
-<div class="main-pic" id="main" name="main">
+<div class="main-pic" id="main">
     <img class="home_bg" src="images/home_bg.jpg" alt="" width="1350px" height="580px"/>
     <img class="sensing" src="images/sensing.png" alt="" ;/>
     <img class="solgan" src="images/solgan.png" alt="" width="338px" height="54px"/>
@@ -155,7 +155,7 @@
 
 
 <!--第二个背景开始-->
-<div class="two-bg" id="twobg" name="twobg">
+<div class="two-bg" id="twobg">
     <div class="top-nav" id="navbar">
         <div class="nav-left">
             <div class="left-logo">
@@ -247,7 +247,7 @@
 <!--第二个背景结束-->
 
 <!--第三个背景开始-->
-<div class="all" id="all" name="all">
+<div class="all" id="all">
     <div class="allboth">
         <div class="screen">
             <div class="car-window">
@@ -282,30 +282,30 @@
                     <div class="pic">
                         <img src="images/selling_tit1.png" alt="" width="498px" height="117px"/>
                     </div>
-                    <span>展开座椅</span>
+                    <span>收起座椅</span>
                 </div>
                 <div class="openwindow-close" id="openwindowclose">
                     <div class="pic">
                         <img src="images/selling_tit2.png" alt="" width="498px" height="117px"/>
                     </div>
-                    <span>收起座椅</span>
+                    <span>展开座椅</span>
                 </div>
             </div>
             <div class="carlast">
                 <img src="images/4.jpg" alt="" width="1350px" height="633px"/>
 
-                <div class="openwindow">
+                <div class="window">
                     <div class="pic">
                         <img src="images/selling_tit1.png" alt="" width="498px" height="117px"/>
                     </div>
                     <span>查看详情</span>
                 </div>
-                <div class="openwindow-close" id="openwindowcplose">
+                <!-- <div class="openwindow-close" id="openwindowcplose">
                     <div class="pic">
                         <img src="images/selling_tit2.png" alt="" width="498px" height="117px"/>
                     </div>
                     <span>收起</span>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -319,7 +319,7 @@
 
 
 <!--第四个背景开始-->
-<div class="car-light" id="box" name="box">
+<div class="car-light" id="box">
 
     <div class="list">
         <div class="length">
@@ -372,7 +372,7 @@
 
 
 <!--第五个页面-->
-<div class="car-bg5 clearfix" id="car-bg5" name="car-bg5">
+<div class="car-bg5 clearfix" id="car-bg5">
     <img class="cti-line-bg" src="images/bg_line.png" width="1350px">
     <img class="cti-configure-bg bg-tag" src="images/configure_bg.jpg" height="633px" width="1350px">
 
@@ -457,66 +457,63 @@
 
         <div class="swiner-slider">
         <!-- four -->
-        <div class="cti-configure-cont">
-        <!-- <h5 class="cti-tit-conf">豪华版</h5> -->
-        <img class="img-t-tit" src="images/t_4.png">
-        <img class="cti-tit-img" src="images/conf_line.png">
-        <div class="a-config">
-        <p class="cti-configure-price">29.28万</p>
-        </div>
-        <ul>
-        <li>ACL主动转向照明系统</li>
-        <li>DWS胎压报警系统</li>
-        <li>EPB电子手刹(带Auto Hold自动驻车系统)</li>
-        <li>四门一键升降式电动车窗</li>
-        <li>第二排独立头等舱座椅</li>
-        <li>180°宽视角倒车影像</li>
+            <div class="cti-configure-cont">
+            <!-- <h5 class="cti-tit-conf">豪华版</h5> -->
+                <img class="img-t-tit" src="images/t_4.png">
+                <img class="cti-tit-img" src="images/conf_line.png">
+                <div class="a-config">
+                    <p class="cti-configure-price">29.28万</p>
+                </div>
+                <ul>
+                    <li>ACL主动转向照明系统</li>
+                    <li>DWS胎压报警系统</li>
+                     <li>EPB电子手刹(带Auto Hold自动驻车系统)</li>
+                    <li>四门一键升降式电动车窗</li>
+                    <li>第二排独立头等舱座椅</li>
+                    <li>180°宽视角倒车影像</li>
 
-        </ul>
-        <div class="cti-contrast-model">
-        <p data-value="1">了解详细配置</p>
-        <img src="images/contrast.png">
+                </ul>
+                <div class="cti-contrast-model">
+                    <p data-value="1">了解详细配置</p>
+                    <img src="images/contrast.png">
+                </div>
+            </div>
+            <!-- five -->
+            <div class="cti-configure-cont">
+            <!-- <h5 class="cti-tit-conf">至尊版</h5> -->
+                <img class="img-t-tit" src="images/t_2.png">
+                <img class="cti-tit-img" src="images/conf_line.png">
+                <div class="a-config">
+                    <p class="cti-configure-price">30.98万</p>
+                </div>
+                <ul>
+                    <li>ACC主动巡航控制系统</li>
+                    <li>FCW预碰撞警示系统</li>
+                    <li>PA自动泊车辅助系统</li>
+                    <li>RDM行车偏移修复系统</li>
+                    <li>MVSC 360°全景影像系统</li>
+                    <li>DVD影音系统</li>
+                </ul>
+                <div class="cti-contrast-model">
+                    <p data-value="1">了解详细配置</p>
+                    <img src="images/contrast.png">
+                </div>
+            </div>
         </div>
-        </div>
-        <!-- five -->
-        <div class="cti-configure-cont">
-        <!-- <h5 class="cti-tit-conf">至尊版</h5> -->
-        <img class="img-t-tit" src="images/t_2.png">
-        <img class="cti-tit-img" src="images/conf_line.png">
-        <div class="a-config">
-        <p class="cti-configure-price">30.98万</p>
-        </div>
-        <ul>
-        <li>ACC主动巡航控制系统</li>
-        <li>FCW预碰撞警示系统</li>
-        <li>PA自动泊车辅助系统</li>
-        <li>RDM行车偏移修复系统</li>
-        <li>MVSC 360°全景影像系统</li>
-        <li>DVD影音系统</li>
-
-        </ul>
-        <div class="cti-contrast-model">
-        <p data-value="1">了解详细配置</p>
-        <img src="images/contrast.png">
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="count">
-            <div class="p-t"></div>
-            <div class="p-r"></div>
-            <div class="p-b"></div>
-            <div class="p-l"></div>
-            <a class="cti" href="javascript:;">信贷费用计算器<span><img src="images/arr.png"></span></a>
-        </div>
-
-
+    </div>
+    <div class="count">
+        <div class="p-t"></div>
+        <div class="p-r"></div>
+        <div class="p-b"></div>
+        <div class="p-l"></div>
+        <a class="cti" href="javascript:;">信贷费用计算器<span><img src="images/arr.png"></span></a>
+    </div>
 </div>
 
 
 
 <!--第六个页面-->
-<div class="nextnew" id="nextnew" name="nextnew">
+<div class="nextnew" id="nextnew">
     <img src="images/news_bg.jpg" alt="" width="1350px" height="633px"/>
 
     <div class="news-title" id="news">
@@ -594,7 +591,7 @@
 </div>
 
 <!--第七个页面-->
-<div class=" page-tag" id="page-tag" name="page-tag">
+<div class=" page-tag" id="page-tag">
     <img class="map-bg" src="images/map_bg.jpg" width="1350px" height="633px">
 
     <div class="map-tit" id="map1">
@@ -662,7 +659,7 @@
         <p>
             <a href="">东风本田汽车有限公司</a><a href="">京ICP备05029197号-29</a>
         </p>
-        <img class="return-top" src="images/return.png">
+        <a href="#body" class="break"><img class="return-top" src="images/return.png"></a>
     </div>
 </div>
 

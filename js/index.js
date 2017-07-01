@@ -100,8 +100,8 @@ $(function () {
             $(this).parents().siblings().children("span").hide();
         });
     })
-    $(".right-fix>ul").mouseleave(function () {
-        $("span").hide();
+    $(".right-fix>ul>li").mouseleave(function () {
+        $(this).find("span").hide();
     })
 })
 
@@ -293,10 +293,10 @@ $(function(){
 //第五个页面
 $(function(){
     $(".cti-contrast-model").mouseenter(function(){
-        $(".cti-contrast-model>p").css("color","white");
+        $(this).find("p").css("color","#fff");
     })
     $(".cti-contrast-model").mouseleave(function(){
-        $(".cti-contrast-model>p").css("color","");
+        $(this).find("p").css("color","");
     })
 })
 
@@ -305,25 +305,27 @@ $(function(){
 $(function(){
     $("#arrright").click(function(){
         $(".swiper-slide").hide();
-            $(".swiner-slider").show();
+        $(".swiner-slider").show();
         })
     $("#arrleft").click(function(){
         $(".swiner-slider").hide();
-            $(".swiper-slide").show();
+        $(".swiper-slide").show();
     })
 })
 
 //第六个页面
 $(function(){
-    $(".new-count").click(function(){
-        $(".cont").hide(1000,function(){
-            $(".topone").show();
-        });
+    $(".new-count").mouseenter(function(){
+        // $(this).find(".cont").hide(500,function(){
+        //     $(".topone").show();
+        // });
+        $(this).find(".topone").show(500);
     })
-    $(".new-count").click(function(){
-        $(".topone").hide(1000,function(){
-            $(".cont").show();
-        });
+    $(".new-count").mouseleave(function(){
+        // $(this).find(".topone").hide(500,function(){
+        //     $(".cont").show();
+        // });
+        $(this).find(".topone").hide(500);
     })
 })
 
