@@ -241,53 +241,16 @@ $(function(){
 
 //第四个页面
 $(function(){
-    var box=document.getElementById("box");
-    var list=box.children[0]
-    var length=list.children[0];
-    var divs=length.children;
-    var centent=list.children[1];
-    var neirong=centent.children[1];
-    var spans=neirong.children;
-
-//获取图片宽
-    var imgWid = list.offsetWidth;
-
-    for (var i = 0; i < spans.length; i++) {
-        spans[i].index = i;
-        spans[i].onmouseover=function(){
-            for (var i = 0; i < spans.length; i++) {
-                spans[i].style.backgroundColor = "#18130E";
-            }
-            this.style.backgroundColor="#9C6B51";
-
-            //让screen进行滚动
-            //需要借助当前li的索引设置移动位置
-            var target = -this.index * imgWid;
-            animate(length, target);
-        }
-        spans[i].onmouseout=function(){
-            this.style.backgroundColor="";
-        }
-    }
-
-    function animate(tag, target) {
-        clearInterval(tag.timer);
-        tag.timer = setInterval(function () {
-            var leader = tag.offsetLeft;
-            //step = ( target - leader ) / 10
-            var step = (target - leader) / 10;
-            //处理一下step的值，对step进行向上取整
-            step = leader > target ? Math.floor(step) : Math.ceil(step);
-            //leader = leader +  step
-            leader = leader + step;
-
-            //设置给left值
-            tag.style.left = leader + "px";
-            if (leader == target) {
-                clearInterval(tag.timer);
-            }
-        }, 17);
-    }
+    $(".neirong span").mouseenter(function(){
+        $(this).css("background","#9c6b51");
+        var idx = $(this).index();
+        $(".car-light .car-bg").eq(idx).stop(true,true).fadeIn().siblings().fadeOut();
+        $(".car-light .car-bg").eq(idx).addClass("select")
+                .siblings().removeClass("select");
+    });
+    $(".neirong span").mouseleave(function(){
+        $(this).css("background","#18130E");
+    });
 })
 
 //第五个页面
@@ -299,8 +262,6 @@ $(function(){
         $(this).find("p").css("color","");
     })
 })
-
-
 
 $(function(){
     $("#arrright").click(function(){
@@ -319,13 +280,13 @@ $(function(){
         // $(this).find(".cont").hide(500,function(){
         //     $(".topone").show();
         // });
-        $(this).find(".topone").show(500);
+        $(this).find(".topone").fadeIn();
     })
     $(".new-count").mouseleave(function(){
         // $(this).find(".topone").hide(500,function(){
         //     $(".cont").show();
         // });
-        $(this).find(".topone").hide(500);
+        $(this).find(".topone").fadeOut();
     })
 })
 

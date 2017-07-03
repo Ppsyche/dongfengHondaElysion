@@ -654,17 +654,22 @@ img,input{
     height: 633px;
 }
 .car-bg {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 1350px;
     height: 633px;
+    display: none;
 }
-
+.car-bg.select{
+    display: block;
+}
 .one {
     position: absolute;
     z-index: 10;
 }
 
-.car-bg .tit-1 {
+.car-bg .tit{
     position: absolute;
     bottom: 70px;
 }
@@ -692,7 +697,7 @@ img,input{
     position: absolute;
     left: 0;
     top: 0px;
-    width: 6750px;
+    /*width: 6750px;*/
 }
 
 .list .centent {
@@ -715,49 +720,12 @@ img,input{
     text-align: center;
     color: #ffffff;
     font-size: 16px;
-    background-color: #18130E;
+    background: #18130E;
     cursor: pointer;
 }
  .cl {
     background-color: #9C6B51;
 }
-
-.car-bg2 {
-    position: relative;
-}
-
-.car-bg2 .tit-2 {
-    position: absolute;
-    bottom: 70px;
-}
-
-.car-bg3 {
-    position: relative;
-}
-
-.car-bg3 .tit-3 {
-    position: absolute;
-    bottom: 70px;
-}
-
-.car-bg4 {
-    position: relative;
-}
-
-.car-bg4 .tit-4 {
-    position: absolute;
-    bottom: 70px;
-}
-
-.car-bg5 {
-    position: relative;
-}
-
-.car-bg5 .tit-5 {
-    position: absolute;
-    bottom: 70px;
-}
-
 /*第四个背景图片结束*/
 
 
