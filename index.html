@@ -604,51 +604,10 @@
     </div>
     <!--地图-->
     <div class="map-pad" id="mappad">
-        <span><img src="images/map_data/tile.jpg" alt=""/></span>
-        <span><img src="images/map_data/tile_002.jpg" alt=""/></span>
-        <span><img src="images/map_data/tile_003.jpg" alt=""/></span>
-        <span><img src="images/map_data/tile_004.jpg" alt=""/></span>
-        <span><img src="images/map_data/tile_005.jpg" alt=""/></span>
-        <span><img src="images/map_data/tile_006.jpg" alt=""/></span>
-
-        <div class="logo" id="logo">
-            <img class="logo1" src="images/map_data/m_0.png" alt=""/>
-            <img class="logo2" src="images/map_data/m_1.png" alt=""/>
-            <img class="logo3" src="images/map_data/m_2.png" alt=""/>
-            <img class="logo4" src="images/map_data/m_3.png" alt=""/>
-            <img class="logo5" src="images/map_data/icon_10.png" alt=""/>
-            <img class="logo6" src="images/map_data/icon_0.png" alt=""/>
-            <img class="logo7" src="images/map_data/icon_2.png" alt=""/>
-        </div>
-        <div class="addree1" id="addree1">
-            <p>东风本田汽车鑫伯龙特约销售服务店</p>
-
-            <p> 地址：北京市丰台区西局西街298号</p>
-
-            <p>销售热线: 010-51112288</p>
-
-            <p>销售热线: 010-51112399</p>
-        </div>
-        <div class="addree2" id="addree2">
-            <p>东风本田汽车鑫伯龙特约销售服务店</p>
-
-            <p> 地址：河南西局西街298号</p>
-
-            <p>销售热线: 012-51112288</p>
-
-            <p>销售热线: 012-51112399</p>
-        </div>
-        <div class="addree3" id="addree3">
-            <p>东风本田汽车鑫伯龙特约销售服务店</p>
-
-            <p> 地址：山东西局西街298号</p>
-
-            <p>销售热线: 020-51112288</p>
-
-            <p>销售热线: 020-51112399</p>
-        </div>
-
+        <iframe src="map/map.html" frameborder="0"></iframe>
+        <!-- <iframe src="http://www.civic.com.cn/elysionmap/map.html" frameborder="0"></iframe> -->
     </div>
+
 </div>
 <!-- 经销商地图end -->
 
@@ -667,22 +626,5 @@
     </div>
 </div>
 
-<script>
-    var mappad = document.getElementById("mappad");
-    mappad.onmouseover = function () {
-        logo.style.display = "block";
-        addree1.style.display = "block";
-        addree2.style.display = "block";
-        addree3.style.display = "block";
-    }
-    mappad.onmouseout = function () {
-        addree1.style.display = "none";
-        addree2.style.display = "none";
-        addree3.style.display = "none";
-    }
-
-</script>
-
-<!--中间主体图片部分结束-->
 </body>
 </html>
